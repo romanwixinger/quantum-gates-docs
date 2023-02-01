@@ -20,3 +20,15 @@ Contents
 
    usage
    api
+   overview
+   gates
+   factories
+   pulses
+   integrators
+   simulators
+   circuits
+   backends
+   circuit_generators
+   utilities
+   legacy
+
