@@ -110,6 +110,9 @@ CRFactory
 See `here <../../src/quantum_gates/_gates/factories.py#L337>`__ for
 interface.
 
+
+.. _cnotfactory:
+
 CNOTFactory
 ~~~~~~~~~~~
 

@@ -46,13 +46,14 @@ outside.
 Note that this possible issue is specific to multiprocessing on Linux
 operating system, as it depends on how new processes are created.
 
+
+.. _gates_classes:
+
 Classes
 -------
 
 One can construct gatesets with specific pulse shapes, either by
 creating and instance or by using inheritance.
-
-.. _gates-1:
 
 Gates
 ~~~~~
@@ -75,6 +76,9 @@ By default, the standard_pulse is used, so we can also do
 
    gateset = Gates()
 
+
+.. _noisefreegates:
+
 NoiseFreeGates
 ~~~~~~~~~~~~~~
 
@@ -87,6 +91,9 @@ return the noise free result.
 
    gateset = NoiseFreeGates()
    sampled_x = gateset.X(phi, p, T1, T2)
+
+
+.. _scalednoisegates:
 
 ScaledNoiseGates
 ~~~~~~~~~~~~~~~~
@@ -102,6 +109,10 @@ noise_scaling.
 
    gateset = ScaledNoiseGates(noise_scaling=0.1, pulse=pulse)  # 10x less noise
    sampled_x = gateset.X(phi, p, T1, T2)
+
+
+.. _gates_instances:
+
 
 Instances
 ---------
