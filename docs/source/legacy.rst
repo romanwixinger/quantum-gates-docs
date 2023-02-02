@@ -15,7 +15,7 @@ LegacyMrAndersonSimulator
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The simulator has a slightly different interface than the
-`MrAndersonSimulator <./simulators.md>`__
+:ref:`MrAndersonSimulator <mrandersonsimulator>`. 
 
 .. code:: python
 
@@ -57,4 +57,4 @@ LegacyCircuit
 LegacyGates
 ~~~~~~~~~~~
 
-See `StandardGates <gates.md#standard_gates>`__ for the interface.
+See :ref:`standard gates <standard_gates>` for the interface.

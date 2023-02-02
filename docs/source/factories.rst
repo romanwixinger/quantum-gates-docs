@@ -11,14 +11,13 @@ Theory
 ------
 
 The two main factors that influence the distribution of noisy gates are
-the following. First, the `device
-parameters <./utilities.md#deviceparameters>`__ for a specific quantum
-device, containing information such as the T1, T2 times. Second, the
-`pulse shape <./pulses.md>`__ used to execute a specific gate. While the
-pulse shape is independent of the qubit we act on, the device parameters
-are qubit specific. Thus, we choose to add the pulse shape as attribute
-of the gate factory, while the specific noise parameters are provided as
-method arguments when creating a gate.
+the following. First, the :ref:`device parameters <deviceparameters>` 
+for a specific quantum device, containing information such as the 
+T1, T2 times. Second, the :doc:`pulse shape <pulses>` used to execute a 
+specific gate. While the pulse shape is independent of the qubit we act on, 
+the device parameters are qubit specific. Thus, we choose to add the pulse 
+shape as attribute of the :doc:`gate factory <factories>`, while the 
+specific noise parameters are provided as method arguments when creating a gate.
 
 
 .. _factories_usage:
@@ -82,16 +81,14 @@ The interface of the classes can be found in the source code.
 BitflipFactory
 ~~~~~~~~~~~~~~
 
-See `here <../../src/quantum_gates/_gates/factories.py#L7>`__ for
-interface.
+Coming soon.
 
 .. _depolarizingfactory:
 
 DepolarizingFactory
 ~~~~~~~~~~~~~~~~~~~
 
-See `here <../../src/quantum_gates/_gates/factories.py#L30>`__ for
-interface.
+Coming soon.
 
 .. _relaxationfactory:
 
@@ -99,53 +96,46 @@ interface.
 RelaxationFactory
 ~~~~~~~~~~~~~~~~~
 
-See `here <../../src/quantum_gates/_gates/factories.py#L58>`__ for
-interface.
+Coming soon.
 
 .. _singlequbitgatefactory:
 
 SingleQubitGateFactory
 ~~~~~~~~~~~~~~~~~~~~~~
 
-See `here <../../src/quantum_gates/_gates/factories.py#L100>`__ for
-interface.
+Coming soon.
 
 .. _xfactory:
 
 XFactory
 ~~~~~~~~
 
-See `here <../../src/quantum_gates/_gates/factories.py#L291>`__ for
-interface.
+Coming soon.
 
 .. _sxfactory:
 
 SXFactory
 ~~~~~~~~~
 
-See `here <../../src/quantum_gates/_gates/factories.py#L315>`__ for
-interface.
+Coming soon.
 
 .. _crfactory:
 
 CRFactory
 ~~~~~~~~~
 
-See `here <../../src/quantum_gates/_gates/factories.py#L337>`__ for
-interface.
+Coming soon.
 
 .. _cnotfactory:
 
 CNOTFactory
 ~~~~~~~~~~~
 
-See `here <../../src/quantum_gates/_gates/factories.py#L599>`__ for
-interface.
+Coming soon.
 
 .. _cnotinvfactory:
 
 CNOTInvFactory
 ~~~~~~~~~~~~~~
 
-See `here <../../src/quantum_gates/_gates/factories.py#L648>`__ for
-interface.
+Coming soon.

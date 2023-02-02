@@ -16,8 +16,6 @@ How to install
 Requirements
 ~~~~~~~~~~~~
 
-You can |ibm_quantum_lab_link|.
-
 The Python version should be 3.9 or later. We recommend using the library
 together with a |ibm_quantum_lab_link| account, as it necessary for 
 circuit compilation with Qiskit.
@@ -29,7 +27,7 @@ circuit compilation with Qiskit.
 Installation as a user
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The library is available on the |pip_link|with ``pip install quantum-gates``.
+The library is available on the |pip_link| with ``pip install quantum-gates``.
 
 .. |pip_link| raw:: html
 
@@ -63,15 +61,16 @@ Factories
 ~~~~~~~~~
 
 To produce :doc:`gates <gates>`, we use :doc:`factories <factories>`, such as the
-:ref:`cnotfactory`. The instances of these classes have a construct()
-method, with a well documented signature.
+:ref:`cnotfactory`. One can combine factories into a custom :doc:`gates <gates>` 
+class. The factories have a construct() method, with a well documented 
+signature. 
 
 Pulses
 ~~~~~~
 
 When constructing a set of quantum gates with the Gates class, one can
-specify a :ref:`pulse` instance. This pulse describes the
-shape of the RF pulses used to implement the gates.
+specify a :ref:`pulse` instance. This pulse describes the shape of the RF pulses 
+used to implement the gates.
 
 Integrators
 ~~~~~~~~~~~
@@ -83,21 +82,21 @@ Simulators
 ~~~~~~~~~~
 
 The :doc:`MrAndersonSimulator <simulators>` can be used to simulate 
-a quantum circuit transpiled with Qiskit with a specific noisy gate set.
+a quantum circuit transpiled with Qiskit with a specific 
+:doc:`noisy gate set <gates>`.
 
 Backends
 ~~~~~~~~
 
-For the computation, we provide
-:doc:`backends <backends>` out of the box, such as the :ref:`efficientbackend` 
-that uses optimized tensor contractions to simulate 20+ qubits with the
-statevector method.
+For the computation, we provide :doc:`backends <backends>` out of the box, 
+such as the :ref:`efficientbackend` that uses optimized tensor contractions 
+to simulate 20+ qubits with the statevector method.
 
 Circuits
 ~~~~~~~~
 
 The simulators can be configured with a :doc:`circuits` class, such as 
-:ref:`_efficient_circuit`. This class is responsible for sampling the 
+:ref:`efficient_circuit`. This class is responsible for sampling the 
 noisy gates. The class can be configured with a :doc:`gates` instance and one of 
 the :doc:`backends` that executes the statevector simulation. 
 
@@ -105,15 +104,31 @@ Legacy
 ~~~~~~
 
 We also provide the :doc:`legacy <legacy>` implementations of the 
-:ref:`gates <_legacygates>`, :ref:`simulator <_legacymrandersonsimulator>` 
-and :ref:`circuit <_legacycircuit>` classes. They can be used for unit testing.
+:ref:`gates <legacy_gates>`, :ref:`simulator <legacymrandersonsimulator>` 
+and :ref:`circuit <legacycircuit>` classes. They can be used for unit testing.
 
 Utility
 ~~~~~~
 
 In performing quantum simulation, there are many steps that are
-performed repeatedly, such as :ref:`setup the IBM backend <_setup_backend>`, 
-:ref:`transpiling the quantum circuits <_create_qc_list>`, and executing the 
-:ref:`simulation in parallel <_multiprocessing_parallel_simulation>` on a 
+performed repeatedly, such as :ref:`setup the IBM backend <setup_backend>`, 
+loading the noise information as :ref:`DeviceParameters <deviceparameters>`, 
+:ref:`transpiling the quantum circuits <create_qc_list>`, and executing the 
+:ref:`simulation in parallel <multiprocessing_parallel_simulation>` on a 
 powerful machine. For this reason, the most frequently used functions are 
 part of the :doc:`utilities <utilities>`.
+
+
+Authors
+=======
+
+This project has been developed thanks to the effort of the following
+people:
+
+-  Giovanni Di Bartolomeo
+-  Michele Vischi
+-  Francesco Cesa
+-  Michele Grossi (michele.grossi@cern.ch)
+-  Sandro Donadi
+-  Angelo Bassi
+-  Roman Wixinger (roman.wixinger@gmail.com)

@@ -4,7 +4,6 @@ Simulators
 The MrAndersonSimulator is a statevector simulator for the noisy quantum
 gates approach.
 
-
 .. _simulators_classes:
 
 Classes
@@ -48,4 +47,4 @@ LegacyMrAndersonSimulator
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This version is only meant for unit testing and the documentation can be
-found `here <legacy.md#legacymrandersonsimulator>`__.
+found :ref:`here <mrandersonsimulator>`.
