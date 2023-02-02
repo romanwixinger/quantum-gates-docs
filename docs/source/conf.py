@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Noisy Quantum Gates'
+copyright = '2023, Di Bartolomeo, Vischi, Grossi, Wixinger'
+author = 'Di Bartolomeo, Vischi, Grossi, Wixinger'
 
 release = '0.1'
 version = '0.1.0'

@@ -113,11 +113,12 @@ noise_scaling.
 
 .. _gates_instances:
 
-
 Instances
 ---------
 
 For common cases we provide working gateset instances out of the box.
+
+.. _standard_gates:
 
 standard_gates
 ~~~~~~~~~~~~~~
@@ -130,16 +131,25 @@ Uses a constant pulse shape.
 
    sampled_x = standard_gates.X(phi, p, T1, T2)
 
+
+.. _noise_free_gates:
+
 noise_free_gates
 ~~~~~~~~~~~~~~~~
 
 Uses a constant pulse shape and returns the result in the noise free
 regime irrespective of the arguments provided to its methods.
 
+
+.. _legacy_gates:
+
 legacy_gates
 ~~~~~~~~~~~~
 
 Original implementation of the gates, which we use for unit testing.
+
+
+.. _gates_supported_gates:
 
 Supported gates
 ---------------

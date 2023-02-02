@@ -7,11 +7,16 @@ circuit.H(i=0). This functionality is provided in the Circuit classes,
 and packed together with the knowledge on how to sample the noisy gates
 as stochastic matrices from a specific gateset.
 
+
+.. _circuits_classes:
+
 Classes
 -------
 
 We provide different versions, some of which can be used with a specific
 backend to speed up the computations.
+
+.. _circuit:
 
 Circuit
 ~~~~~~~
@@ -35,6 +40,8 @@ use it for unit testing.
    # Evaluate the statevector
    psi1 = circuit.statevector(psi0=np.array([1, 0, 0, 0]))  # Gives [0, 0, 1, 0]
 
+.. _alternative_circuit:
+
 AlternativeCircuit
 ~~~~~~~~~~~~~~~~~~
 
@@ -54,6 +61,9 @@ We can us the AlternativeCircuit class to build a circuit with a custom
    )
 
 This class does not have a depth attribute, it is flexible.
+
+
+.. _standard_circuit:
 
 StandardCircuit
 ~~~~~~~~~~~~~~~

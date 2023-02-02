@@ -1,14 +1,42 @@
-Welcome to Quantum Gates documentation
+Welcome to the Noisy Quantum Gates documentation
 ======================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+**Quantum Gates** (/lu'make/) is a Python library for simulate the noisy 
+behaviour of quantum devices. The noise is incorporated directly in the gates, 
+which become stochastic matrices. 
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+How to install
+--------------
 
+Requirements
+~~~~~~~~~~~~
+
+The Python version should be 3.9 or later. We recommend using the library
+together with a 
+`IBM Quantum Lab <a href="https://quantum-computing.ibm.com/lab" target="_blank">`__ 
+account, as it necessary for circuit compilation with Qiskit.
+
+Installation as a user
+~~~~~~~~~~~~~~~~~~~~~~
+
+The library is available on the Python Package Index (PyPI) with
+``pip install quantum-gates``.
+
+Installation as a contributor
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For users who want to have access to the source code, we recommend cloning 
+the repository from
+`Github <a href="https://github.com/CERN-IT-INNOVATION/quantum-gates" target="_blank">`__.
+
+
+.. note::
+
+   This project is under active development.
+
+
+Functionality
+--------------
 
 Gates
 ~~~~~
@@ -22,7 +50,7 @@ to always get the same sequence of noise.
 Factories
 ~~~~~~~~~
 
-To produce gates, we use gate factories, such as the
+To produce :doc:`gates`, we use :doc:`factories`, such as the
 :ref:`cnotfactory`. The instances of these classes have a construct()
 method, with a well documented signature.
 
@@ -30,15 +58,14 @@ Pulses
 ~~~~~~
 
 When constructing a set of quantum gates with the Gates class, one can
-specify a `Pulse <./explanations/pulses.md>`__. This pulse describes the
+specify a :ref:`pulse`. This pulse describes the
 shape of the RF pulses used to implement the gates.
 
 Integrators
 ~~~~~~~~~~~
 
 Behind the scenes, we solve Ito integrals to deal with the different
-pulse shapes. This is handled by the
-`Integrator <./explanations/integrators.md>`__ class.
+pulse shapes. This is handled by the :doc:`integrators`.
 
 Simulate quantum circuits
 -------------------------
@@ -46,34 +73,29 @@ Simulate quantum circuits
 Simulators
 ~~~~~~~~~~
 
-The `MrAndersonSimulator <./explanations/simulators.md>`__ can be used
-to simulate a quantum circuit transpiled with Qiskit with a specific
-noisy gate set.
+The :doc:`simulators` can be used to simulate a quantum circuit transpiled 
+with Qiskit with a specific noisy gate set.
 
 Backends
 ~~~~~~~~
 
 For the computation, we provide
-`backends <./explanations/backends.md>`__ out of the box, such as the
-`EfficientBackend <./explanations/backends.md#efficientbackend>`__ that
+:doc:`backends` out of the box, such as the :ref:`efficientbackend` that
 uses optimized tensor contractions to simulate 20+ qubits with the
 statevector method.
 
 Circuits
 ~~~~~~~~
 
-The simulators can be configured with a
-`circuit <./explanations/circuits.md>`__ class, such as
-`EfficientCircuit <./explanations/circuits.md#efficientcircuit>`__. This
-class is responsible for sampling the noisy gates. The class can be
-configured with a specific `gateset <./explanations/gates.md>`__ and a
-`backend <./explanations/backends.md>`__ that executes the statevector
-simulation.
+The simulators can be configured with a :doc:`circuits` class, such as 
+:ref:`_efficient_circuit`. This class is responsible for sampling the 
+noisy gates. The class can be configured with a :doc:`gates` instance and one of 
+the :doc:`backends` that executes the statevector simulation. 
 
 Legacy
 ------
 
-We also provide the legacy implementations of the gates, simulator and
+We also provide the :doc:`legacy` implementations of the gates, simulator and
 circuit classes. They can be used for unit testing.
 
 Utility
@@ -85,29 +107,3 @@ quantum circuits, implementing well-known quantum circuits such as the
 GHZ circuit, and executing the simulation in parallel on a powerful
 machine. For this reason, the most frequently used functions are part of
 the utilities.
-
-
-
-.. note::
-
-   This project is under active development.
-
-Contents
---------
-
-.. toctree::
-
-   usage
-   api
-   overview
-   gates
-   factories
-   pulses
-   integrators
-   simulators
-   circuits
-   backends
-   circuit_generators
-   utilities
-   legacy
-

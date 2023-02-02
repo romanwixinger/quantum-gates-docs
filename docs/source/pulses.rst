@@ -5,13 +5,22 @@ Gates on real quantum devices are commonly implemented as radiofrequency
 (RF) pulses. The present classes represent the pulse shapes, which can
 then be used to build to construct a gateset.
 
+
+.. _pulses_theory:
+
 Theory
 ------
 
 Coming soon.
 
+
+.. _pulses_classes:
+
 Classes
 -------
+
+.. _pulse:
+
 
 Pulse
 ~~~~~
@@ -34,6 +43,9 @@ constant “rectangle” pulse.
        perform_checks=False
        )
 
+
+.. _gaussian_pulse:
+
 GaussianPulse
 ~~~~~~~~~~~~~
 
@@ -51,6 +63,9 @@ this interval.
    scale = 0.5 # Standard deviation of the Gaussian
 
    constant_pulse = GaussianPulse(loc=loc, scale=scale)
+
+
+.. _pulses_instances:
 
 Instances
 ---------

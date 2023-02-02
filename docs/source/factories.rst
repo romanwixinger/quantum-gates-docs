@@ -4,6 +4,9 @@ Factories
 The gate factories stochasticall generate Noisy Quantum Gates as numpy
 matrices.
 
+
+.. _factories_theory:
+
 Theory
 ------
 
@@ -16,6 +19,9 @@ pulse shape is independent of the qubit we act on, the device parameters
 are qubit specific. Thus, we choose to add the pulse shape as attribute
 of the gate factory, while the specific noise parameters are provided as
 method arguments when creating a gate.
+
+
+.. _factories_usage:
 
 Usage
 -----
@@ -63,10 +69,15 @@ gates.
    T2 = ...    # Qubit's dephasing time in ns
    x_gate = x_factory.construct(phi, p, T1, T2)
 
+
+.. _factories_classes:
+
 Classes
 ~~~~~~~
 
 The interface of the classes can be found in the source code.
+
+.. _bitflipfactory:
 
 BitflipFactory
 ~~~~~~~~~~~~~~
@@ -74,11 +85,16 @@ BitflipFactory
 See `here <../../src/quantum_gates/_gates/factories.py#L7>`__ for
 interface.
 
+.. _depolarizingfactory:
+
 DepolarizingFactory
 ~~~~~~~~~~~~~~~~~~~
 
 See `here <../../src/quantum_gates/_gates/factories.py#L30>`__ for
 interface.
+
+.. _relaxationfactory:
+
 
 RelaxationFactory
 ~~~~~~~~~~~~~~~~~
@@ -86,11 +102,15 @@ RelaxationFactory
 See `here <../../src/quantum_gates/_gates/factories.py#L58>`__ for
 interface.
 
+.. _singlequbitgatefactory:
+
 SingleQubitGateFactory
 ~~~~~~~~~~~~~~~~~~~~~~
 
 See `here <../../src/quantum_gates/_gates/factories.py#L100>`__ for
 interface.
+
+.. _xfactory:
 
 XFactory
 ~~~~~~~~
@@ -98,18 +118,21 @@ XFactory
 See `here <../../src/quantum_gates/_gates/factories.py#L291>`__ for
 interface.
 
+.. _sxfactory:
+
 SXFactory
 ~~~~~~~~~
 
 See `here <../../src/quantum_gates/_gates/factories.py#L315>`__ for
 interface.
 
+.. _crfactory:
+
 CRFactory
 ~~~~~~~~~
 
 See `here <../../src/quantum_gates/_gates/factories.py#L337>`__ for
 interface.
-
 
 .. _cnotfactory:
 
@@ -118,6 +141,8 @@ CNOTFactory
 
 See `here <../../src/quantum_gates/_gates/factories.py#L599>`__ for
 interface.
+
+.. _cnotinvfactory:
 
 CNOTInvFactory
 ~~~~~~~~~~~~~~

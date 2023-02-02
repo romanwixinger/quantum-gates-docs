@@ -4,8 +4,12 @@ Legacy
 The original versions of the simulator, circuit and gates are provided
 for use in unit testing.
 
+.. _legacy_classes:
+
 Classes
 -------
+
+.. _legacymrandersonsimulator:
 
 LegacyMrAndersonSimulator
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -26,6 +30,8 @@ The simulator has a slightly different interface than the
            shots,
            device_param)
 
+.. _legacycircuit:
+
 LegacyCircuit
 ~~~~~~~~~~~~~
 
@@ -45,6 +51,8 @@ LegacyCircuit
    # Statevector simulation
    psi0 = np.array([1, 0, 0, 0])
    psi1 = circuit.statevector(psi0)  # Gives [0  0  1  0]
+
+.. _legacygates:
 
 LegacyGates
 ~~~~~~~~~~~

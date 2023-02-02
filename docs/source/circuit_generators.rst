@@ -5,6 +5,9 @@ Functions to setup common `quantum
 circuits <https://qiskit.org/documentation/stubs/qiskit.circuit.QuantumCircuit.html>`__
 in Qiskit for a given number of qubits.
 
+
+.. _circuit_generators_functions:
+
 Functions
 ---------
 
@@ -25,6 +28,9 @@ transpile the circuit for a specific quantum device.
    circuit = hadamard_reverse_QFT_circ(nqubit=2)
    circ.draw('mpl')
 
+
+.. _hadamard_reverse_QFT_circ:
+
 hadamard_reverse_QFT_circ
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -33,6 +39,9 @@ followed by the inverse of the Quantum Fourrier Transform. A useful
 property of the circuit is that it maps the all 0 state to the equal
 superposition of all states, and back to the 0 state. As we know the
 ideal result, we can calculate fidelity metrics easily.
+
+
+.. _GHZ_circ:
 
 GHZ_circ
 ~~~~~~~~
@@ -43,10 +52,16 @@ from the zero state. The GHZ is maximally entangled and implemented by
 applying a Hadamard gate on the first qubit, and then subsequently
 applying CNOT gates with source i, target i+1, for i = 0, …, nqubit - 2.
 
+
+.. _GFT_circ:
+
 QFT_circ
 ~~~~~~~~
 
 Generates the Quantum Fourrier Transform.
+
+
+.. _QAOA_circ:
 
 QAOA_circ
 ~~~~~~~~~

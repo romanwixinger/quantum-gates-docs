@@ -5,6 +5,8 @@ While the circuit class can be used to sample the matrices making up a
 quantum circuit, the backend performs the actual matrix multiplications
 which appear in the statevector simulation.
 
+.. _backends_theory:
+
 Theory
 ------
 
@@ -40,6 +42,9 @@ influence the computational cost dramatically. In the EfficientBackend,
 we leverage optimizations based on the property of the quantum circuit,
 as well as optimizations performed by the library opt_einsum. This
 library computes the contractions for us.
+
+
+.. _backends_classes:
 
 Classes
 -------
