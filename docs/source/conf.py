@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Noisy Quantum Gates'
+project = 'Quantum Gates'
 copyright = '2023, Di Bartolomeo, Vischi, Grossi, Wixinger'
 author = 'Di Bartolomeo, Vischi, Grossi, Wixinger'
 
