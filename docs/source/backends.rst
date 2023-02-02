@@ -1,9 +1,9 @@
 Backends
 ========
 
-While the circuit class can be used to sample the matrices making up a
-quantum circuit, the backend performs the actual matrix multiplications
-which appear in the statevector simulation.
+While the circuit class samples the matrices making up a quantum circuit, 
+the backend performs the actual matrix multiplications which appear in 
+the statevector simulation.
 
 .. _backends_theory:
 
@@ -70,7 +70,7 @@ We apply the GHZ algorithm on the two-qubit zero state as an example.
    psi1 = backend.statevector(mp_list, psi0)  # Gives [1, 0, 0, 1] / sqrt(2)
 
 Not applying gates to each qubit will lead to errors. In each matrix
-product, the dimension of the combined kronecker product has to match
+product, the dimension of the combined Kronecker product has to match
 the dimension of psi.
 
 .. code:: python
@@ -85,6 +85,9 @@ the dimension of psi.
    mp_list2 = [[CNOT]]                         # Gates for 2 qubits -> fine. 
    mp_list3 = [[np.eye(2), np.eye(2)], [H, H]] # Gates for 1 + 1 = 2 qubits -> fine.
 
+
+.. _standard_backend:
+
 StandardBackend
 ~~~~~~~~~~~~~~~
 
@@ -93,11 +96,17 @@ them to the statevector. As the memory requirements for the matrix grow
 as O((2\ :sup:`n)`\ 2), this approach only scales up to 13 qubits on a
 normal machine.
 
+
+.. _efficient_backend:
+
 EfficientBackend
 ~~~~~~~~~~~~~~~~
 
 The EfficientBackend is optimized for general circuits and offers a
 significant speedup in the higher qubit regime, scaling to 20+ qubits.
+
+
+.. _backend_for_ones:
 
 BackendForOnes
 ~~~~~~~~~~~~~~
@@ -110,6 +119,9 @@ they do not change the result.
 Note: A best practice is to benchmark the speed of this backend against
 the EfficientBackend, as the regime in which this backend is better is
 quite narrow.
+
+
+.. _backends_possible_extensions:
 
 Possible extensions
 -------------------

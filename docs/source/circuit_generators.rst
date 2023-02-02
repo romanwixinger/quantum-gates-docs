@@ -1,7 +1,7 @@
 Circuit Generators
 ==================
 
-Functions to setup common `quantum
+Functions to set up common `quantum
 circuits <https://qiskit.org/documentation/stubs/qiskit.circuit.QuantumCircuit.html>`__
 in Qiskit for a given number of qubits.
 
@@ -11,7 +11,7 @@ in Qiskit for a given number of qubits.
 Functions
 ---------
 
-All functions take the number of qubits as argument, and return the
+All functions take the number of qubits as argument and return the
 corresponding Qiskit circuit. One can then use the Qiskit backend to
 transpile the circuit for a specific quantum device.
 

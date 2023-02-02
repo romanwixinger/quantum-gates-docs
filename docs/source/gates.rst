@@ -1,8 +1,8 @@
 Gates
 =====
 
-Here you learn how to use the different gatesets to sample noisy quantum
-gates. The gateset combines multiple gate factories into a single
+Here you learn how to use the different gate sets to sample noisy quantum
+gates. The gate set combines multiple gate factories into a single
 object, which is easy to import and pass in arguments.
 
 Usage
@@ -11,10 +11,10 @@ Usage
 While the usage is fairly trivial, there is one dangerous subtlety that
 the user should be aware of. As computer programs are deterministic, the
 sampling from probability distributions often works by using a
-pseudorandom number generator underneath. Thus, the user should not
+pseudo-random number generator underneath. Thus, the user should not
 accidentaly sample the same gates multiple times, which can happen when
 the same simulation is run in parallel many times, and the seed of the
-pseudorandom number generator is the same in each run. An easy fix would
+pseudo-random number generator is the same in each run. An easy fix would
 be to set a random seed in the start of each simulation.
 
 .. code:: python
@@ -52,7 +52,7 @@ operating system, as it depends on how new processes are created.
 Classes
 -------
 
-One can construct gatesets with specific pulse shapes, either by
+One can construct gate sets with specific pulse shapes, either by
 creating and instance or by using inheritance.
 
 Gates
@@ -116,7 +116,7 @@ noise_scaling.
 Instances
 ---------
 
-For common cases we provide working gateset instances out of the box.
+For common cases we provide working gate set instances out of the box.
 
 .. _standard_gates:
 

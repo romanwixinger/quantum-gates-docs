@@ -1,8 +1,8 @@
 Factories
 =========
 
-The gate factories stochasticall generate Noisy Quantum Gates as numpy
-matrices.
+The gate factories generate noisy quantum gates stochastically and return 
+them as as numpy matrices.
 
 
 .. _factories_theory:

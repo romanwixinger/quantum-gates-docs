@@ -1,8 +1,8 @@
 Welcome to the Quantum Gates documentation
 ======================================
 
-**Quantum Gates** is a Python library for simulate the noisy behaviour of 
-real quantum devices. The noise is incorporated directly in the gates, 
+**Quantum Gates** is a Python library for simulating the noisy behaviour of 
+real quantum devices. The noise is incorporated directly into the gates, 
 which become stochastic matrices. 
 
 .. note::

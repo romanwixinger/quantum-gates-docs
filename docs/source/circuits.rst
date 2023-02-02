@@ -5,7 +5,7 @@ Quantum circuit can be constructed easily when we have a circuit object
 to which we can apply gates by simply calling method like
 circuit.H(i=0). This functionality is provided in the Circuit classes,
 and packed together with the knowledge on how to sample the noisy gates
-as stochastic matrices from a specific gateset.
+as stochastic matrices from a specific gate set.
 
 
 .. _circuits_classes:
@@ -72,12 +72,18 @@ Combining the AlternativeCircuit with the trivial
 `StandardBackend <backends.md#standardbackend>`__, we get the
 StandardCircuit. Again, we only recommend to use it for unit testing.
 
+
+.. _efficient_circuit:
+
 EfficientCircuit
 ~~~~~~~~~~~~~~~~
 
 This is the class we recommend to use for simulations, as it uses the
 optimized `EfficientBackend <backends.md#efficientbackend>`__ for the
 computations.
+
+
+.. _circuits_usage:
 
 Usage
 -----
@@ -107,6 +113,9 @@ code:
    psi1 = circuit.statevector(psi0=np.array([1, 0, 0, 0])) 
 
 Not applying gates to each qubit will lead to errors.
+
+
+.. _circuits_possible_extensions:
 
 Possible extensions
 -------------------
