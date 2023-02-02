@@ -5,34 +5,46 @@ Welcome to the Noisy Quantum Gates documentation
 behaviour of quantum devices. The noise is incorporated directly in the gates, 
 which become stochastic matrices. 
 
+.. note::
+
+   This project is under active development.
+
+
 How to install
 --------------
 
 Requirements
 ~~~~~~~~~~~~
 
+You can |ibm_quantum_lab_link|.
+
 The Python version should be 3.9 or later. We recommend using the library
-together with a 
-<a href="https://quantum-computing.ibm.com/lab" target="_blank">IBM Quantum Lab</a>
-account, as it necessary for circuit compilation with Qiskit.
+together with a |ibm_quantum_lab_link| account, as it necessary for 
+circuit compilation with Qiskit.
+
+.. |ibm_quantum_lab_link| raw:: html
+
+   <a href="https://quantum-computing.ibm.com/lab" target="_blank">IBM Quantum Lab</a>
 
 Installation as a user
 ~~~~~~~~~~~~~~~~~~~~~~
 
-The library is available on the 
-<a href="" target="_blank"> Python Package Index (PyPI) </a> 
-with ``pip install quantum-gates``.
+The library is available on the |pip_link|with ``pip install quantum-gates``.
+
+.. |pip_link| raw:: html
+
+   <a href="https://pypi.org/project/quantum-gates/" target="_blank">Python Package Index (PyPI)</a>
+
 
 Installation as a contributor
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For users who want to have access to the source code, we recommend cloning 
-the repository from <a href="https://github.com/CERN-IT-INNOVATION/quantum-gates" target="_blank">Github</a>.
+the repository from |github_link|.
 
+.. |github_link| raw:: html
 
-.. note::
-
-   This project is under active development.
+   <a href="https://github.com/CERN-IT-INNOVATION/quantum-gates" target="_blank">Github</a>
 
 
 Functionality
